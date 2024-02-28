@@ -1,0 +1,124 @@
+<!Doctype HTML>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Schedule of Courses</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <nav>
+      <ul>
+        <li>Schedule of week <a id="weeknum">WEEK_NUM</a> <a id="name">NAMESTR</a></li>
+      </ul>
+
+      <!-- A Search form is another common non-linear way to navigate through a website. -->
+
+      <form>
+        <input type="search" name="q" placeholder="Username" />
+        <input type="submit" value="Query" />
+      </form>
+    </nav>
+
+    <!-- Here is our page's main content -->
+    <main>
+      <p id="datetime"></p>
+      <!-- It contains a table -->
+      <table>
+        <colgroup>
+          <col id="timecol"/>
+          <col id="moncol"/>
+          <col id="tuecol"/>
+          <col id="wedcol"/>
+          <col id="thucol"/>
+          <col id="fricol"/>
+          <col id="satcol"/>
+          <col id="suncol"/>
+        </colgroup>
+        <tr>
+          <td>&nbsp;</td>
+          <td>Monday</td>
+          <td>Tuesday</td>
+          <td>Wednesday</td>
+          <td>Thursday</td>
+          <td>Friday</td>
+          <td>Saturday</td>
+          <td>Sunday</td>
+        </tr>
+        <tr>
+          <td>Morning 1</td>
+          <td><a id="Mon1"></a></td>
+          <td><a id="Tue1"></a></td>
+          <td><a id="Wed1"></a></td>
+          <td><a id="Thu1"></a></td>
+          <td><a id="Fri1"></a></td>
+          <td><a id="Sat1"></a></td>
+          <td><a id="Sun1"></a></td>
+        </tr>
+        <tr>
+          <td>Morning 2</td>
+          <td><a id="Mon2"></a></td>
+          <td><a id="Tue2"></a></td>
+          <td><a id="Wed2"></a></td>
+          <td><a id="Thu2"></a></td>
+          <td><a id="Fri2"></a></td>
+          <td><a id="Sat2"></a></td>
+          <td><a id="Sun2"></a></td>
+        </tr>
+        <tr>
+          <td>Afternoon 1</td>
+          <td><a id="Mon3"></a></td>
+          <td><a id="Tue3"></a></td>
+          <td><a id="Wed3"></a></td>
+          <td><a id="Thu3"></a></td>
+          <td><a id="Fri3"></a></td>
+          <td><a id="Sat3"></a></td>
+          <td><a id="Sun3"></a></td>
+        </tr>
+        <tr>
+          <td>Afternoon 2</td>
+          <td><a id="Mon4"></a></td>
+          <td><a id="Tue4"></a></td>
+          <td><a id="Wed4"></a></td>
+          <td><a id="Thu4"></a></td>
+          <td><a id="Fri4"></a></td>
+          <td><a id="Sat4"></a></td>
+          <td><a id="Sun4"></a></td>
+        </tr>
+        <tr>
+          <td>Evening</td>
+          <td><a id="Mon5"></a></td>
+          <td><a id="Tue5"></a></td>
+          <td><a id="Wed5"></a></td>
+          <td><a id="Thu5"></a></td>
+          <td><a id="Fri5"></a></td>
+          <td><a id="Sat5"></a></td>
+          <td><a id="Sun5"></a></td>
+        </tr>
+      </table>
+
+
+      <!-- the aside content can also be nested within the main content -->
+      <aside>
+        <h2>Related</h2>
+
+        <ul>
+          <li><a href="#">Oh I do like to be beside the seaside</a></li>
+          <li><a href="#">Oh I do like to be beside the sea</a></li>
+          <li><a href="#">Although in the North of England</a></li>
+          <li><a href="#">It never stops raining</a></li>
+          <li><a href="#">Oh well…</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <!-- And here is our main footer that is used across all the pages of our website -->
+
+    <footer>
+      <p>©Copyright 2050 by nobody. All rights reversed.</p>
+    </footer>
+  </body>
+</html>
