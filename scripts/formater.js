@@ -7,7 +7,7 @@
 const params = new URL(document.location).searchParams;
 const username = params.get("user");
 
-const jsonpath = `json/${username}.json`;
+const jsonpath = `scripts/json/${username}.json`;
 
 const MILLISECONDS_PER_DAY = 24 * 60 * 60 * 1000;
 const dateNow = new Date();
