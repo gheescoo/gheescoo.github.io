@@ -12,13 +12,13 @@
 
     <nav>
       <ul>
-        <li>Schedule of week <a id="weeknum">WEEK_NUM</a> <a id="name">NAMESTR</a></li>
+        <li>Schedule of week <a id="weeknum">WEEK_NUM</a> <a id="name">NAME_STR</a></li>
       </ul>
 
       <!-- A Search form is another common non-linear way to navigate through a website. -->
 
       <form>
-        <input type="search" name="q" placeholder="Username" />
+        <input type="search" name="user" placeholder="Username" />
         <input type="submit" value="Query" />
       </form>
     </nav>
@@ -30,13 +30,13 @@
       <table>
         <colgroup>
           <col id="timecol"/>
-          <col id="moncol"/>
-          <col id="tuecol"/>
-          <col id="wedcol"/>
-          <col id="thucol"/>
-          <col id="fricol"/>
-          <col id="satcol"/>
-          <col id="suncol"/>
+          <col id="1col"/>
+          <col id="2col"/>
+          <col id="3col"/>
+          <col id="4col"/>
+          <col id="5col"/>
+          <col id="6col"/>
+          <col id="7col"/>
         </colgroup>
         <tr>
           <td>&nbsp;</td>
@@ -50,7 +50,7 @@
         </tr>
         <tr>
           <td>Morning 1</td>
-          <td><a id="Mon1"></a></td>
+          <td><a id="Mon1">Mon 1 Example</a></td>
           <td><a id="Tue1"></a></td>
           <td><a id="Wed1"></a></td>
           <td><a id="Thu1"></a></td>
@@ -106,11 +106,8 @@
         <h2>Related</h2>
 
         <ul>
-          <li><a href="#">Oh I do like to be beside the seaside</a></li>
-          <li><a href="#">Oh I do like to be beside the sea</a></li>
-          <li><a href="#">Although in the North of England</a></li>
-          <li><a href="#">It never stops raining</a></li>
-          <li><a href="#">Oh well…</a></li>
+          <li id="datebegin"></li>
+          <li id="datenow"></li>
         </ul>
       </aside>
     </main>
@@ -118,7 +115,8 @@
     <!-- And here is our main footer that is used across all the pages of our website -->
 
     <footer>
-      <p>©Copyright 2050 by nobody. All rights reversed.</p>
+      <p>©Copyright 1919-08-10-114514 by gheescoo. All rights reversed.</p>
     </footer>
   </body>
+  <script src="scripts/formater.js"></script>
 </html>
