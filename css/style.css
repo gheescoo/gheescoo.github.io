@@ -26,7 +26,7 @@ p, li {
 
 nav {
   height: 50px;
-  background-color: #114514;
+  background-color: #8664ed30;
   display: flex;
   margin-bottom: 10px;
 }
@@ -71,7 +71,7 @@ input[type="search"] {
 input[type="submit"] {
   flex: 1;
   margin-left: 1rem;
-  background: #333;
+  background: #7b93cac4;
   border: 0;
   color: white;
 }
@@ -84,6 +84,7 @@ main {
 
 table {
   border-collapse: collapse;
+	text-align: center;
 }
 
 td, th {
@@ -94,7 +95,7 @@ td, th {
 aside {
   flex: 1;
   margin-left: 10px;
-  background-color: #39c5bb;
+  background-color: #39c5bb50;
 }
 
 footer {
