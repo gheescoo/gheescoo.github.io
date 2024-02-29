@@ -42,7 +42,7 @@ function replaceSchedule(info, weekNum, dayNum) {
     for(const block of tableList) {
         for(const item of info[block]) {
             if(item["weeks"].includes(weekNum)) {
-                document.getElementById(block).textContent = getInfoStr(item);
+                document.getElementById(block).innerText = getInfoStr(item);
             }
         }
     }
@@ -50,7 +50,7 @@ function replaceSchedule(info, weekNum, dayNum) {
 }
 
 function getInfoStr(item) {
-    return `${item.coursename}<br/>${item.teacher}<br/>${item.location}<br/><br/>`;
+    return `${item.coursename}\n${item.teacher}\n${item.location}\n\n`;
 }
 
 populate();
