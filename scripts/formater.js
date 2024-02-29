@@ -12,9 +12,7 @@ const jsonpath = `scripts/json/${username}.json`;
 const MILLISECONDS_PER_DAY = 24 * 60 * 60 * 1000;
 const dateNow = new Date();
 
-
 async function populate() {
-
     const request = new Request(jsonpath);
 
     const response = await fetch(request);
@@ -32,8 +30,8 @@ async function populate() {
 function replaceInfo(info, weekNum, dayNum) {
     document.getElementById("weeknum").textContent = weekNum;
     document.getElementById("name").textContent = info.name;
-    document.getElementById("datebegin").textContent = info.dateBeginISO;
-    document.getElementById("datenow").textContent = dateNow;
+    document.getElementById("datebegin").textContent = "The Monday you set for the first week is " + info.dateBeginISO;
+    document.getElementById("datetime").textContent = dateNow;
 }
 
 function replaceSchedule(info, weekNum, dayNum) {
@@ -46,7 +44,7 @@ function replaceSchedule(info, weekNum, dayNum) {
             }
         }
     }
-    document.getElementById(`${dayNum}col`).style.color = "yellow";
+    document.getElementById(`${dayNum}col`).style.backgroundColor = "#97DB9A90";
 }
 
 function getInfoStr(item) {
