@@ -38,7 +38,6 @@ function replaceInfo(info, weekNum, dayNum) {
 
 function replaceSchedule(info, weekNum, dayNum) {
     const tableList = ["Mon1", "Tue1", "Wed1", "Thu1", "Fri1", "Sat1", "Sun1", "Mon2", "Tue2", "Wed2", "Thu2", "Fri2", "Sat2", "Sun2", "Mon3", "Tue3", "Wed3", "Thu3", "Fri3", "Sat3", "Sun3", "Mon4", "Tue4", "Wed4", "Thu4", "Fri4", "Sat4", "Sun4", "Mon5", "Tue5", "Wed5", "Thu5", "Fri5", "Sat5", "Sun5"];
-    const numToDayabbr = [null, "mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 
     for(const block of tableList) {
         for(const item of info[block]) {
@@ -47,11 +46,11 @@ function replaceSchedule(info, weekNum, dayNum) {
             }
         }
     }
-    document.getElementById(`${numToDayabbr[daynum]}col`).style.color = "yellow";
+    document.getElementById(`${dayNum}col`).style.color = "yellow";
 }
 
 function getInfoStr(item) {
-    return `${item.coursename}\n${item.teacher}\n${item.location}\n\n`;
+    return `${item.coursename}<br/>${item.teacher}<br/>${item.location}<br/><br/>`;
 }
 
 populate();
