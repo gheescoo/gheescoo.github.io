@@ -80,11 +80,13 @@ input[type="submit"] {
 
 main {
   display: flex;
+  overflow: auto;
 }
 
 table {
   border-collapse: collapse;
-	text-align: center;
+  text-align: center;
+  white-space: pre;
 }
 
 td, th {
