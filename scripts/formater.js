@@ -42,7 +42,7 @@ function replaceSchedule(info, weekNum, dayNum) {
     const dayList = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
     for(const day of dayList) {
-        for(let i = 1; i <= 7; i++) {
+        for(let i = 1; i <= 5; i++) {
             tableList.push(day + i.toString());
         }
     }
