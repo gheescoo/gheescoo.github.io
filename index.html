@@ -12,10 +12,8 @@
 
     <nav>
       <ul>
-        <li>Schedule of week <a id="weeknum">WEEK_NUM</a> <a id="name">NAME_STR</a></li>
+        <li><span id="name">NAME_STR</span>'s schedule of week <span id="weeknum">WEEK_NUM</span></li>
       </ul>
-
-      <!-- A Search form is another common non-linear way to navigate through a website. -->
 
       <form>
         <input type="search" name="user" placeholder="Username" />
@@ -25,9 +23,9 @@
 
     <!-- Here is our page's main content -->
     <main>
-      <p id="datetime"></p>
       <!-- It contains a table -->
       <table>
+        <caption id="datetime">CURRENT_TIME</caption>
         <colgroup>
           <col id="timecol"/>
           <col id="1col"/>
@@ -100,14 +98,12 @@
         </tr>
       </table>
 
-
       <!-- the aside content can also be nested within the main content -->
       <aside>
-        <h2>Related</h2>
-
+        <h2>Not that clear</h2>
         <ul>
-          <li id="datebegin"></li>
-          <li id="datenow"></li>
+          <li>about what content</li>
+          <li>should I write here</li>
         </ul>
       </aside>
     </main>
@@ -117,6 +113,9 @@
     <footer>
       <p>©Copyright 1919-08-10-114514 by gheescoo. All rights reversed.</p>
     </footer>
+
   </body>
+
   <script src="scripts/formater.js"></script>
+
 </html>
